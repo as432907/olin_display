@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NeoPixel Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Olin Library Display</h1>
+        <form action="/command" method="POST">
+            <button class="btn" name="command" value="on">Turn On</button>
+            <button class="btn" name="command" value="off">Turn Off</button>
+            <button class="btn" name="command" value="blink">Blink</button>
+            <button class="btn" name="command" value="color_cycle">Color Cycle</button>
+        </form>
+    </div>
+</body>
+</html>
+<!doctype html>
